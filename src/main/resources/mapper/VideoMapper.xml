@@ -47,4 +47,9 @@
             </collection>
         </collection>
     </resultMap>
+
+
+    <select id="findById" resultType="Video">
+        select * from video where id = #{video_id}
+    </select>
 </mapper>

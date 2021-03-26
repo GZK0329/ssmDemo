@@ -17,4 +17,8 @@ public interface VideoMapper {
 
     //按id查找视频详情
     Video findDetailById(@Param(value = "video_id") int videoId);
+
+
+    //通过id查视频
+    Video findById(@Param("video_id") int videoId);
 }

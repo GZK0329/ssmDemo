@@ -30,11 +30,18 @@ public class JsonData {
         this.msg = msg;
     }
 
+    public JsonData(String msg) {
+        this.msg = msg;
+    }
+
     public static JsonData buildSuccess(){
         return new JsonData(0, null, null);
     }
     public static JsonData buildSuccess(Object data){
         return new JsonData(0, data, null);
+    }
+    public static JsonData buildSuccess(String msg){
+        return new JsonData(msg);
     }
 
     public static JsonData buildError(String msg){
